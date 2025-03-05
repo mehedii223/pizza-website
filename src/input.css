@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wdth,wght@75..100,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-bgColor: #f1c40f;
+    --color-textColor: #ffffff;
+    --color-paragraphColor: #576574;
+    --color-simple: #ff4757;
+
+    --font-paragraphFont: "Roboto", serif;
+    --font-headlinefont: "Sigmar", serif;
+    --font-similarly: "Oswald", serif;
+    --font-secondaryFont: "Lilita One", serif;
+    --font-headfontfamily: "Anton", serif;
+}
+
+@theme {
+  --animate-wiggle: wiggle 2s ease-in-out infinite;
+  @keyframes wiggle {
+    50% {
+      transform: translateY(-10%);
+    }
+  }
+}
+
+@theme{
+    --animate-moving: moving 2s ease-in-out infinite;
+    @keyframes moving {
+        50%{
+            transform: translateX(10%);
+        }
+    }
+}
+
+/* for menu slider */
+@theme{
+    --animate-slide1: slide1 1s forwards;
+
+    @keyframes slide1 {
+        from{
+            left: 50%;
+        }
+        to{
+            left: -1000%;
+        }
+    }
+}
+
+@theme{
+    --animate-slide2: slide2 0.5s forwards;
+
+    @keyframes slide2 {
+        from{
+            left: 1000%;
+        }
+        to{
+            left: 50%;
+        }
+    }
+}
+@theme {
+    --animate-leftSlider1: leftSlider1 3s forwards;
+
+    @keyframes leftSlider1 {
+        from{
+            left: 50%;
+        }
+        to{
+            left: 1000%;
+        }
+    }
+}
+@theme {
+    --animate-leftSlider2: leftSlider2 0.5s forwards;
+
+    @keyframes leftSlider2 {
+        from{
+            left: -100%;
+        }
+        to{
+            left: 50%;
+        }
+    }
+}
+
+
+
+@layer components{
+    
+    .textHeadLine{
+        @apply text-5xl font-bold
+    }
+    .textSimple{
+        @apply text-xl font-medium
+    }
+    .centerFlex{
+        @apply flex justify-center items-center
+    }
+    .centerPosi{
+        @apply absolute top-[50%] left-[50%] -translate-full
+    }
+    .textLiner{
+        @apply bg-linear-to-r from-[#EA2027] to-[#7f03f3] bg-clip-text text-transparent
+    }
+
+    /* for button */
+    .buttonBg{
+        @apply bg-linear-to-bl from-[#ff4757] from-20% to-[#ff6b81] rounded-xl text-xl font-semibold hover:bg-linear-to-r hover:from-[#ff4f5d] hover:to-[#ff758a] transition duration-200  shadow-2xl
+    }
+    .buttonsm{
+        @apply px-4 py-2
+    }
+
+    .container{
+        @apply mx-auto p-3
+    }
+    .headline{
+        @apply text-6xl font-headlinefont
+    }
+
+    .itersectionMiddle{
+        @apply absolute transform scale-50 left-[36%] opacity-25;
+    }
+    .lineFinished{
+        @apply w-[20%] h-[5px] bg-simple rounded-full border-0 mx-auto mt-10;
+    }
+
+    /* for scroll up */
+    .active{
+        @apply bottom-6
+    }
+}
+
+#menuBtn button:hover,
+#menuBtn button.active{
+    @apply bg-green-900 text-white;
+}

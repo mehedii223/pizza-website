@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html class="overflow-y-auto scroll-smooth h-screen" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive || Pizza Website</title>
+    <link href="./output.css" rel="stylesheet">
+    <!-- Favicon Add -->
+     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body class=" bg-bgColor tracking-wider text-textColor font-paragraphFont scroll-ml-9 dark:bg-gray-900">
+
+    <!-- Header area start -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-bgColor dark:bg-gray-900" id="header">
+        <div class="relative container">
+            <div class="flex justify-between lg:py-3">
+                <div>
+                    <a href="#" class="text-2xl lg:text-3xl font-bold uppercase font-headfontfamily tracking-wider">
+                        piz <span class="textLiner">baba</span>
+                    </a>
+                </div>
+                <nav class="md:flex gap-5">
+                    <div class="absolute w-full flex justify-center items-center flex-col gap-5 border-b-2 top-[-1000%] duration-700 left-0 py-10 bg-bgColor md:block md:static md:space-x-5 md:py-0 md:border-b-0 z-999 dark:bg-gray-900" id="menuList">
+                        <a href="#home" class="menu text-xl font-semibold text-blue-600 hover:text-blue-600 duration-200" id="nav-link">home</a>
+                        <a href="#menu" class="menu text-xl font-semibold hover:text-blue-600 duration-200" id="nav-link">menu</a>
+                        <a href="#about" class="menu text-xl font-semibold hover:text-blue-600 duration-200" id="nav-link">About</a>
+                        <a href="#review" class="menu text-xl font-semibold hover:text-blue-600 duration-200" id="nav-link">review</a>
+                        <a href="#contact" class="menu text-xl font-semibold hover:text-blue-600 duration-200" id="nav-link">contact</a>
+                        <div class="absolute top-[5%] right-[5%] text-2xl font-semibold md:static md:hidden" id="crossIcon">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="flex gap-5">
+                        <div class="text-2xl font-semibold" id="darkMoodOn">
+                            <i class="fa-solid fa-moon text-black"></i>
+                        </div>
+                        <div class="hidden text-2xl font-semibold" id="lightMoodOn">
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+                        <div class="text-2xl font-semibold md:hidden" id="barIcon">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero section start -->
+         <section id="home">
+            <div class="w-full container mt-30 lg:mt-50">
+                <div class="flex flex-col gap-10 md:flex-row">
+                    <div class="w-[70%] mx-auto flex md:w-[40%] lg:w-[30%] xl:w-[20%]">
+                        <img src="img/pizza-hero.png" class="home_img w-full animate-wiggle md:basis-[100%]" alt="">
+                    </div>
+                    <div class="home_content text-center md:w-[60%] lg:w-[70%]">
+                        <h1 class="uppercase text-6xl font-headlinefont md:text-5xl lg:text-6xl">this is <span class="textLiner">pizza</span> house</h1>
+                        <h3 class="text-xl capitalize py-5 font-secondaryFont md:text-base lg:text-xl lg:w-[60%] lg:mx-auto">welcome my PIZ BABA house.Here are has kind of dailycious pizza.</h3>
+                        <p class="leading-7 text-paragraphColor text-xs md:text-sm lg:w-[80%] lg:mx-auto lg:text-lg dark:text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam odit delectus fugiat nemo molestiae ab doloremque architecto illo? Odit aspernatur ipsam suscipit assumenda enim corporis sint commodi sequi minus, consectetur, quisquam tenetur doloremque. Veniam tenetur nulla corporis aspernatur molestias fugiat consectetur temporibus, soluta aliquam pariatur quas natus unde deleniti ullam!</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+        <!-- catagory section start -->
+         <section id="catagory">
+            <div class=" container mt-20 md:w-[80%] lg:w-[70%] xl:w-[60%]">
+                <h1 class="capitalize text-4xl font-headlinefont text-center lg:text-5xl">How to work's it</h1>
+                <div class="flex gap-3 md:gap-15 relative my-10 lg:my-20">
+                    <div class="catagory_card absolute"></div>
+                    <div class="catagory_card w-[33%] bg-[#ff9f43] p-4 shadow-2xl text-center cursor-pointer rounded-2xl md:w-[25%] lg:w-[20%] xl:w-[20%] md:grow-1 hover:bg-[#feca57] group duration-500 ease-in-out dark:bg-bgColor dark:hover:bg-gray-800" id="catagory">
+                        <div class="bg-[#eb4d4b] rounded-full group-hover:bg-[#ff6b6b]">
+                            <img class="w-[70%] mx-auto py-4 px-2 " src="img/catagori/shipping.png" alt="">
+                        </div>
+                        <h1 class="text-xl font-secondaryFont capitalize text-[#5f27cd] xl:text-2xl group-hover:text-[#341f97] dark:text-white dark:group-hover:text-white">we will delivar your purcheas</h1>
+                    </div>
+                    <div class="catagory_card w-[33%] bg-[#ff9f43] p-4 shadow-2xl text-center cursor-pointer rounded-2xl md:w-[25%] lg:w-[20%] xl:w-[20%] md:grow-1 hover:bg-[#feca57] group duration-500 ease-in-out dark:bg-bgColor dark:hover:bg-gray-800" id="catagory">
+                        <div class="bg-[#eb4d4b] rounded-full group-hover:bg-[#ff6b6b]">
+                            <img class="w-[70%] mx-auto py-4 px-2" src="img/catagori/food.png" alt="">
+                        </div>
+                        <h1 class="text-xl font-secondaryFont capitalize text-[#5f27cd] xl:text-2xl group-hover:text-[#341f97] dark:text-white dark:group-hover:text-white">enjoy our testy organic pizza</h1>
+                    </div>
+                    <div class="catagory_card w-[33%] bg-[#ff9f43] p-4 shadow-2xl text-center cursor-pointer rounded-2xl md:w-[25%] lg:w-[20%] xl:w-[20%] md:grow-1 hover:bg-[#feca57] group duration-500 ease-in-out dark:bg-bgColor dark:hover:bg-gray-800" id="catagory">
+                        <div class="bg-[#eb4d4b] rounded-full group-hover:bg-[#ff6b6b]">
+                            <img class="w-[70%] mx-auto py-4 px-2" src="img/catagori/sign in.png" alt="">
+                        </div>
+                        <h1 class="text-xl font-secondaryFont capitalize text-[#5f27cd] xl:text-2xl group-hover:text-[#341f97] dark:text-white dark:group-hover:text-white">sign in and choose for our weekly menu</h1>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="uppercase buttonBg buttonsm  lg:px-5 lg:py-3">
+                        order online
+                    </button>
+                </div>
+                <hr class="w-[20%] h-[5px] bg-simple rounded-full border-0 mx-auto mt-10">
+            </div>
+         </section>
+
+        <!-- menu list -->
+         <section id="menu">
+            <!-- 1st menu list -->
+            <div class="container mt-20">
+                <h1 class="text-4xl font-headlinefont text-center lg:text-5xl lg:text-5xl">from our menu</h1>
+                <div class="my-10 relative lg:mx-30 xl:mx-40 h-[300px]">
+                    <div class="text-center absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]" id="items">
+                        <img class="w-[95%] my-10 mx-auto md:w-[80%] lg:w-[70%] xl:w-[50%]" src="img/menu/italian pizza.png" alt="">
+                        <h1 class="text-xl font-secondaryFont lg:text-2xl">italian pizza</h1>
+                    </div>
+                    <div class="text-center absolute top-[50%] -left-[1000%] -translate-x-[50%] -translate-y-[50%]" id="items">
+                        <img class="w-[95%] my-10 mx-auto md:w-[80%] lg:w-[70%] xl:w-[50%]" src="img/menu/Louis-style pizza.png" alt="">
+                        <h1 class="text-xl font-secondaryFont lg:text-2xl">Louis-style pizza</h1>
+                    </div>
+                    <div class="text-center absolute top-[50%] -left-[1000%] -translate-x-[50%] -translate-y-[50%]" id="items">
+                        <img class="w-[95%] my-10 mx-auto md:w-[80%] lg:w-[70%] xl:w-[60%]" src="img/menu/Margherita Sushi pizza.png" alt="">
+                        <h1 class="text-xl font-secondaryFont lg:text-2xl">Margherita Sushi pizza</h1>
+                    </div>
+                    <div class="text-center absolute top-[50%] -left-[1000%] -translate-x-[50%] -translate-y-[50%]" id="items">
+                        <img class="w-[95%] my-10 mx-auto md:w-[80%] lg:w-[70%] xl:w-[60%]" src="img/menu/Church's Chicken Fried chicken Wrap Hot chicken.png" alt="">
+                        <h1 class="text-xl font-secondaryFont lg:text-2xl">Church's Chicken Fried chicken Wrap Hot chicken</h1>
+                    </div>
+                    <div class="text-center absolute top-[50%] -left-[1000%] -translate-x-[50%] -translate-y-[50%]" id="items">
+                        <img class="w-[95%] my-10 mx-auto md:w-[80%] lg:w-[70%] xl:w-[60%]" src="img/menu/meat pizza.png" alt="">
+                        <h1 class="text-xl font-secondaryFont lg:text-2xl">meat pizza</h1>
+                    </div>
+                    <div class="text-center absolute top-[50%] -left-[1000%] -translate-x-[50%] -translate-y-[50%]" id="items">
+                        <img class="w-[95%] my-10 mx-auto md:w-[80%] lg:w-[70%] xl:w-[60%]" src="img/menu/baked bread.png" alt="">
+                        <h1 class="text-xl font-secondaryFont lg:text-2xl">baked bread</h1>
+                    </div>
+                    <div class="text-center absolute top-[50%] -left-[1000%] -translate-x-[50%] -translate-y-[50%]" id="items">
+                        <img class="w-[95%] my-10 mx-auto md:w-[80%] lg:w-[70%] xl:w-[50%]" src="img/menu/Pizza Take-out Fast food Italian cuisine.png" alt="">
+                        <h1 class="text-xl font-secondaryFont lg:text-2xl">Italian pizza</h1>
+                    </div>
+                    <div class="text-center absolute top-[50%] -left-[1000%] -translate-x-[50%] -translate-y-[50%]" id="items">
+                        <img class="w-[95%] my-10 mx-auto md:w-[80%] lg:w-[70%] xl:w-[60%]" src="img/menu/roasted meat and potato fries dishes.png" alt="">
+                        <h1 class="text-xl font-secondaryFont lg:text-2xl">roasted meat and potato fries dishes</h1>
+                    </div>
+                    <div class="text-center absolute top-[50%] -left-[1000%] -translate-x-[50%] -translate-y-[50%]" id="items">
+                        <img class="w-[95%] my-10 mx-auto md:w-[80%] lg:w-[70%] xl:w-[60%]" src="img/menu/Spaghetti Alla Puttanesca.png" alt="">
+                        <h1 class="text-xl font-secondaryFont lg:text-2xl">Spaghetti Alla Puttanesca</h1>
+                    </div>
+                    <div>
+                        <i class="p-2 border-2 border-white rounded-full fas fa-angle-left hover:text-simple hover:border-simple duration-200 absolute top-[40%] left-[2%] lg:p-3 xl:p-4" id="leftbutton"></i>
+                        <i class="p-2 border-2 border-white rounded-full fas fa-angle-right hover:text-simple hover:border-simple duration-200 absolute top-[40%] right-[2%] lg:p-3 xl:p-4" id="rightbutton"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd menu list -->
+            <div class="container mt-10">
+                <h1 class="capitalize text-4xl font-headlinefont text-center lg:text-5xl">our drinks menu</h1>
+                <div class="mt-10 space-y-5 xl:flex xl:space-y-0 xl:gap-5">
+                    <div class="menu_drink1 w-[80%] h-[190px] mx-auto bg-[#9b59b6] rounded-3xl pl-[5px] py-[5px] flex shadow-2xl xl:h-[250px]">
+                        <img class="w-[30%] h-full rounded-3xl xl:w-[40%]" src="img/drinks/drink1.jpg" alt="">
+                        <div class="w-[70%] p-3">
+                            <h1 class="capitalize text-2xl font-headfontfamily">red cold-drink</h1>
+                            <p class="text-xs text-[#ffffffc9] font-semibold tracking-widest my-3 leading-5">Sangria drink with orange slice.Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vero a ut</p>
+                            <button class="capitalize px-4 py-2 bg-bgColor rounded-full font-bold hover:border-2 hover:border-bgColor hover:bg-transparent hover:text-bgColor dark:bg-bgColor dark:hover:text-white dark:hover:border-white duration-200 ">buy online</button>
+                        </div>
+                    </div>
+                    <div class="menu_drink2 w-[80%] h-[190px] mx-auto bg-[#6F1E51] rounded-3xl pl-[5px] py-[5px] flex shadow-2xl xl:h-[250px]">
+                        <img class="w-[30%] h-full rounded-3xl xl:w-[40%]" src="img/drinks/drink2.jpg" alt="">
+                        <div class="w-[70%] p-3">
+                            <h1 class="capitalize text-2xl font-headfontfamily">apple cold-drink</h1>
+                            <p class="text-xs text-[#ffffffc9] font-semibold tracking-widest my-3 leading-5">Sangria drink with orange slice.Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vero a ut</p>
+                            <button class="capitalize px-4 py-2 bg-bgColor rounded-full font-bold hover:border-2 hover:border-bgColor hover:bg-transparent hover:text-bgColor dark:bg-bgColor dark:hover:text-white dark:hover:border-white duration-200">buy online</button>
+                        </div>
+                    </div>
+                    <div class="menu_drink3 w-[80%] h-[190px] mx-auto bg-green-800 rounded-3xl pl-[5px] py-[5px] flex shadow-2xl xl:h-[250px]">
+                        <img class="w-[30%] h-full rounded-3xl xl:w-[40%]" src="img/drinks/drink3.jpg" alt="">
+                        <div class="w-[70%] p-3">
+                            <h1 class="capitalize text-2xl font-headfontfamily">orange cold-drink</h1>
+                            <p class="text-xs text-[#ffffffc9] font-semibold tracking-widest my-3 leading-5">Sangria drink with orange slice.Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vero a ut</p>
+                            <button class="capitalize px-4 py-2 bg-bgColor rounded-full font-bold hover:border-2 hover:border-bgColor hover:bg-transparent hover:text-bgColor dark:bg-bgColor dark:hover:text-white dark:hover:border-white duration-200">buy online</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="text-center">
+                <button class="uppercase buttonBg buttonsm  mt-10  lg:tpx-5 xl:py-3">order now</button>
+            </div>
+            <hr class="w-[20%] h-[5px] bg-simple rounded-full border-0 mx-auto mt-10 md:w-[18%] lg:w-[15%] xl:w-[10%]">
+         </section>
+
+        <!-- populer item list -->
+         <section id="populer">
+            <div class="container mt-20 text-center">
+                <h1 class="text-4xl font-headlinefont capitalize lg:text-5xl">most populer item</h1>
+                <div class="mt-10 space-y-8 md:flex xl:gap-8 dark:text-black">
+                    <div class="popular_item1 bg-yellow-500 dark:bg-bgColor shadow-2xl rounded-3xl py-10 relative mx-10 md:w-[50%] md:mx-2 lg:w-[60%] xl:w-[33%] xl:h-[400px] h-[550px] md:h-[470px]">
+                        <img class="w-[40%] mx-[27%] animate-moving md:mt-8" id="populer" src="img/menu/italian pizza.png" alt="">
+                        <h1 class="text-3xl font-headfontfamily tracking-widest my-5 capitalize">italian pizza</h1>
+                        <p class="w-[50%] mx-auto md:w-[95%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo suscipit dolore cumque, mollitia distinctio quibusdam sed aliquam totam molestiae quaerat.</p>
+                        <h3 class="absolute top-5 right-5 text-4xl font-headfontfamily textLiner">50$</h3>
+                    </div>
+                    <div class="popular_item2 bg-yellow-500 dark:bg-bgColor shadow-2xl rounded-3xl py-10 relative mx-10 md:w-[50%] md:mx-2 lg:w-[60%] xl:w-[33%] xl:h-[400px] h-[550px] md:h-[470px]">
+                        <img class="w-[50%] mx-[22%] animate-moving  md:w-[60%] md:mx-[16%]  lg:mt-10 mt-10 md:mt-13" id="populer" src="img/menu/meat pizza.png" alt="">
+                        <h1 class="text-3xl font-headfontfamily tracking-widest my-5 capitalize">meat pizza</h1>
+                        <p class="w-[50%] mx-auto md:w-[90%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo suscipit dolore cumque, mollitia distinctio quibusdam sed aliquam totam molestiae quaerat.</p>
+                        <h3 class="absolute top-5 right-5 text-4xl font-headfontfamily textLiner">70$</h3>
+                    </div>
+                    <div class="popular_item3 bg-yellow-500 dark:bg-bgColor shadow-2xl rounded-3xl py-10 relative mx-10 md:w-[50%] md:mx-2 lg:w-[60%] xl:w-[33%] xl:h-[400px] h-[550px] md:h-[470px]">
+                        <img class="w-[50%] mx-[22%] animate-moving lg:w-[40%] lg:mx-[28%]" id="populer" src="img/drinks/populer.png" alt="">
+                        <h1 class="text-3xl font-headfontfamily tracking-widest my-5 capitalize">especial cold-drink</h1>
+                        <p class="w-[50%] mx-auto md:w-[90%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo suscipit dolore cumque, mollitia distinctio quibusdam sed aliquam totam molestiae quaerat.</p>
+                        <h3 class="absolute top-5 right-5 text-4xl font-headfontfamily textLiner">10$</h3>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="text-center">
+                    <button class="uppercase buttonBg buttonsm  mt-10  lg:tpx-5 xl:py-3">order now</button>
+                </div>
+                <hr class="w-[20%] h-[5px] bg-simple rounded-full border-0 mx-auto mt-10 md:w-[18%] lg:w-[15%] xl:w-[10%]">
+            </div>
+         </section>
+
+        <!-- about list -->
+         <section id="about">
+            <div class="bg-[url(img/restaurant.jpg)] bg-center bg-cover bg-no-repeat w-full mt-20">
+                <div class="w-full bg-black/70">
+                    <div class="container">
+                        <h1 class="text-4xl font-headlinefont text-center lg:text-5xl">about us</h1>
+                        <div class="flex md:mx-10 lg:mx-15 xl:mx-25">
+                            <div class="w-[60%] md:w-[65%] lg:w-[60%] mt-7 p-3">
+                                <h1 class="uppercase font-headfontfamily text-3xl lg:text-5xl lg:leading-15">find food and drinks all-in-one place for your best tase.</h1>
+                                <p class="text-xs leading-5 mt-5 lg:text-xl lg:leading-7 lg:w-[60%] ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis ipsum nobis. Temporibus adipisci unde odit obcaecati aliquid facere corporis accusantium provident, eveniet expedita veniam harum quas fugiat in nemo?</p>
+                                <div class="space-y-3 mt-5">
+                                    <div class="flex gap-2">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <p>+0801720-983543</p>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <p>pizbaba0@gmail.com</p>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p class="capitalize">dhaka, bangladesh</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-[40%] md:w-[35%] lg:w-[40%] lg:my-0 lg:mt-15 xl:w-[23%] animate-wiggle my-10" src="img/chef.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+        <!-- Best menu list -->
+         <section id="bestmenu">
+            <div class="container mt-20">
+                <h1 class="text-4xl font-headlinefont text-center capitalize lg:text-5xl">our best menu</h1>
+                <div class="space-x-4 flex justify-between mt-10 lg:mx-20 xl:mx-50" id="menuBtn">
+                    <button class="text-xl font-bold bg-yellow-300 dark:bg-gray-700 dark:text-white rounded-3xl px-8 py-2 text-paragraphColor shadow duration-150 active" menu-best="all" id="bestMenuItem">ALL</button>
+                    <button class="text-xl font-bold bg-yellow-300 dark:bg-gray-700 dark:text-white rounded-3xl px-8 py-2 text-paragraphColor shadow duration-150" menu-best="pizza" id="bestMenuItem">PIZZA</button>
+                    <button class="text-xl font-bold bg-yellow-300 dark:bg-gray-700 dark:text-white rounded-3xl px-8 py-2 text-paragraphColor shadow duration-150" menu-best="drink" id="bestMenuItem">DRINK</button>
+                    <button class="text-xl font-bold bg-yellow-300 dark:bg-gray-700 dark:text-white rounded-3xl px-8 py-2 text-paragraphColor shadow duration-150" menu-best="food" id="bestMenuItem">FOOD</button>
+                </div>
+                <div class="best_items mt-10 space-y-3  lg:mx-20 xl:flex xl:flex-wrap xl:gap-5 dark:text-black">
+                    <div class="h-[160px] bestItem pizza bg-yellow-500 dark:bg-bgColor rounded-3xl p-4 flex items-center shadow-2xl lg:h-[180px] xl:basis-[48%] xl:h-[200px]">
+                        <img class="w-[20%]" src="img/menu/Louis-style pizza.png" alt="">
+                        <div class="ml-3 w-[80%] relative">
+                            <h1 class="capitalize text-2xl font-secondaryFont">Louis-style pizza</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis porro reprehenderit recusandae minima nemo dolorum?</p>
+                            <h4 class="text-xl font-headfontfamily textLiner absolute top-0 right-0">$30</h4>
+                        </div>
+                    </div>
+                    <div class="h-[160px] bestItem food bg-yellow-500 dark:bg-bgColor rounded-3xl p-4 flex items-center shadow-2xl lg:h-[180px] xl:basis-[48%] xl:h-[200px]">
+                        <img class="w-[20%]" src="img/menu/Church's Chicken Fried chicken Wrap Hot chicken.png" alt="">
+                        <div class="ml-3 w-[80%] relative">
+                            <h1 class="capitalize text-2xl font-secondaryFont">Church's Chicken</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis porro reprehenderit recusandae minima nemo dolorum?</p>
+                            <h4 class="text-xl font-headfontfamily textLiner absolute top-0 right-0">$90</h4>
+                        </div>
+                    </div>
+                    <div class="h-[160px] bestItem pizza bg-yellow-500 dark:bg-bgColor rounded-3xl p-4 flex items-center shadow-2xl lg:h-[180px] xl:basis-[48%] xl:h-[200px]">
+                        <img class="w-[20%]" src="img/menu/italian pizza.png" alt="">
+                        <div class="ml-3 w-[80%] relative">
+                            <h1 class="capitalize text-2xl font-secondaryFont">italian pizza</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis porro reprehenderit recusandae minima nemo dolorum?</p>
+                            <h4 class="text-xl font-headfontfamily textLiner absolute top-0 right-0">$50</h4>
+                        </div>
+                    </div>
+                    <div class="h-[160px] bestItem drink bg-yellow-500 dark:bg-bgColor rounded-3xl p-4 flex items-center shadow-2xl lg:h-[180px] xl:basis-[48%] xl:h-[200px]">
+                        <img class="w-[20%]" src="img/drinks/best.png" alt="">
+                        <div class="ml-3 w-[80%] relative">
+                            <h1 class="capitalize text-2xl font-secondaryFont">red cold</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis porro reprehenderit recusandae minima nemo dolorum?</p>
+                            <h4 class="text-xl font-headfontfamily textLiner absolute top-0 right-0">$15</h4>
+                        </div>
+                    </div>
+                    <div class="h-[160px] bestItem food bg-yellow-500 dark:bg-bgColor rounded-3xl p-4 flex items-center shadow-2xl lg:h-[180px] xl:basis-[48%] xl:h-[200px]">
+                        <img class="w-[20%]" src="img/menu/Spaghetti Alla Puttanesca.png" alt="">
+                        <div class="ml-3 w-[80%] relative">
+                            <h1 class="capitalize text-2xl font-secondaryFont">Spaghetti Alla Puttanesca</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis porro reprehenderit recusandae minima nemo dolorum?</p>
+                            <h4 class="text-xl font-headfontfamily textLiner absolute top-0 right-0">$30</h4>
+                        </div>
+                    </div>
+                    <div class="h-[160px] bestItem pizza bg-yellow-500 dark:bg-bgColor rounded-3xl p-4 flex items-center shadow-2xl lg:h-[180px] xl:basis-[48%] xl:h-[200px]">
+                        <img class="w-[20%]" src="img/menu/meat pizza.png" alt="">
+                        <div class="ml-3 w-[80%] relative">
+                            <h1 class="capitalize text-2xl font-secondaryFont">meat pizza</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis porro reprehenderit recusandae minima nemo dolorum?</p>
+                            <h4 class="text-xl font-headfontfamily textLiner absolute top-0 right-0">$60</h4>
+                        </div>
+                    </div>
+                    <div class="h-[160px] bestItem pizza bg-yellow-500 dark:bg-bgColor rounded-3xl p-4 flex items-center shadow-2xl lg:h-[180px] xl:basis-[48%] xl:h-[200px]">
+                        <img class="w-[20%]" src="img/menu/Pizza Take-out Fast food Italian cuisine.png" alt="">
+                        <div class="ml-3 w-[80%] relative">
+                            <h1 class="capitalize text-2xl font-secondaryFont xl:w-[80%]">Pizza Take-out Fast food Italian</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis porro reprehenderit recusandae minima nemo dolorum?</p>
+                            <h4 class="text-xl font-headfontfamily textLiner absolute top-0 right-0">$50</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+        <!-- Best review list -->
+         <section id="review">
+            <div class="container mt-20">
+                <h1 class="text-4xl lg:text-5xl font-headlinefont text-center capitalize">our best review</h1>
+                <div class="mt-10 text-black space-y-4">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="bg-yellow-300 dark:bg-bgColor dark:text-white px-4 w-[90%] h-[200px] md:w-[85%] lg:w-[75%] xl:w-[50%] mx-auto py-8 rounded-3xl flex items-center" id="reviewItem">
+                                    <img class="rounded-full w-[15%] lg:w-[13%] xl:w-[15%] h-[80px] lg:h-[100px] xl:h-[90px] object-cover" src="img/view/viewer1.jpg" alt="">
+                                    <div class="ml-3 w-[85%] dark:text-black">
+                                        <h1 class="text-xl lg:text-2xl font-extrabold capitalize ">robert carlos</h1>
+                                        <p class="text-gray-700 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, vitae quibusdam ea nisi illum praesentium, architecto doloribus optio asperiores laboriosam officiis reiciendis dignissimos aperiam! Qui!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bg-yellow-300 dark:bg-bgColor dark:text-white px-4 w-[90%] h-[200px] md:w-[85%] lg:w-[75%] xl:w-[50%] mx-auto py-8 rounded-3xl flex items-center" id="reviewItem">
+                                    <img class="rounded-full w-[15%] lg:w-[13%] xl:w-[15%] h-[80px] lg:h-[100px] xl:h-[90px] object-cover" src="img/view/viewer2.jpg" alt="">
+                                    <div class="ml-3 w-[85%] dark:text-black">
+                                        <h1 class="text-xl lg:text-2xl font-extrabold capitalize">jordan bold</h1>
+                                        <p class="text-gray-700 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, vitae quibusdam ea nisi illum praesentium, architecto doloribus optio asperiores laboriosam officiis reiciendis dignissimos aperiam! Qui! laboriosam officiis reiciendis dignissimos aperiam! Qui!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bg-yellow-300 dark:bg-bgColor dark:text-white px-4 w-[90%] h-[200px] md:w-[85%] lg:w-[75%] xl:w-[50%] mx-auto py-8 rounded-3xl flex items-center" id="reviewItem">
+                                    <img class="rounded-full w-[15%] lg:w-[13%] xl:w-[15%] h-[80px] lg:h-[100px] xl:h-[90px] object-cover" src="img/view/viewer3.jpg" alt="">
+                                    <div class="ml-3 w-[85%] dark:text-black">
+                                        <h1 class="text-xl lg:text-2xl font-extrabold capitalize">carlos cuta</h1>
+                                        <p class="text-gray-700 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, vitae quibusdam ea nisi illum praesentium, architecto doloribus optio asperiores</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+        <!-- Muster chef -->
+         <section id="chef">
+            <div class="container mt-20">
+                <h1 class="text-4xl font-headlinefont text-center lg:text-5xl capitalize">our muster chef</h1>
+                <div class="mt-10 mx-auto flex w-[90%] lg:w-[80%] xl:w-[60%] space-x-7">
+                    <div>
+                        <img class=" rounded-2xl" src="img/chef/chef1.webp" alt="">
+                        <div class="text-center">
+                            <h1 class="font-extrabold text-2xl lg:text-3xl mt-4">John Smooth</h1>
+                            <p class="text-xs lg:text-base">Restaurant chef head</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class=" rounded-2xl" src="img/chef/chef2.webp" alt="">
+                        <div class="text-center">
+                            <h1 class="font-extrabold text-2xl lg:text-3xl mt-4">Luke Simon</h1>
+                            <p class="text-xs lg:text-base">chef</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class=" rounded-2xl" src="img/chef/chef3.webp" alt="">
+                        <div class="text-center">
+                            <h1 class="font-extrabold text-2xl lg:text-3xl mt-4">Kharl Branyt</h1>
+                            <p class="text-xs lg:text-base">chef</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+        <!-- Contact -->
+         <section id="contact">
+            <div class="bg-[url(img/restaurant2.jpg)] bg-center bg-cover bg-no-repeat">
+                <div class="w-full bg-black/70">
+                    <div class="container mt-20">
+                        <h1 class="text-4xl lg:text-5xl font-headlinefont capitalize text-center">contact us</h1>
+                        <div class="mt-10 w-[90%] lg:w-[80%] xl:w-[60%] mx-auto">
+                            <div>
+                                <h1 class="capitalize text-2xl font-similarly tracking-widest">opening hours</h1>
+                                <!-- opening -->
+                                <div class="my-5">
+                                    <div class="mb-3">
+                                        <p class="pb-3 capitalize">every-day ----------------- 10:00am to 11:00pm</p>
+                                        <hr class="w-[90%] text-gray-500">
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="pb-3 capitalize">friday ---------------------- 09:00am to 09:00pm</p>
+                                        <hr class="w-[90%] text-gray-500">
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="pb-3 capitalize">sunday -------------------- 10:00am to 11:00pm</p>
+                                        <hr class="w-[90%] text-gray-500">
+                                    </div>
+                                </div>
+                                <!-- contact address -->
+                                <div class="mt-10">
+                                    <p class=" text-xs w-[70%] leading-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse dolore accusantium eum facere perspiciatis doloremque aspernatur possimus est alias sapiente.</p>
+                                    <p class="capitalize mt-2">5/6 road, rouftop, dhanmondi, dhaka, bangladesh</p>
+                                </div>
+                                <!-- contact gmail -->
+                                 <div class="mt-10 w-[70%] mx-auto">
+                                    <div class="border-2 rounded-full flex">
+                                        <input class="w-[80%] px-3 py-2 border-none outline-none" type="email" name="gmail" id="gmail" placeholder="Gmail Address">
+                                        <div class="w-[20%] m-[2px] border-2 rounded-full flex justify-center items-center bg-bgColor dark:bg-gray-600 hover:bg-transparent duration-200">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                 </div>
+                                <!-- contact online -->
+                                <div class="space-y-3 mt-10">
+                                    <div class="flex gap-2">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <p>+0801720-983543</p>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <p>pizbaba0@gmail.com</p>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p class="capitalize">dhaka, bangladesh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </main>
+
+    <!-- Footer section -->
+     <footer id="footer">
+        <div class="mt-20 bg-yellow-800 dark:bg-gray-700">
+            <div class="container lg:flex">
+                <!-- for information -->
+                <div class="mt-10 text-center border-b-2 lg:border-b-0 lg:border-r-2 w-[80%] mx-auto pb-5">
+                    <h1 class="text-2xl font-headlinefont capitalize ">information</h1>
+                    <div class="mt-5">
+                        <p class="text-xs w-[80%] mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aut. dolor sit amet consectetur adipisicing elit. Sit, aut.</p>
+                        <div class="mt-3 text-xs space-y-3">
+                            <div class="flex gap-2 justify-center">
+                                <h1 class="capitalize">call us:</h1>
+                                <p>+0801720-983543</p>
+                            </div>
+                            <div class="flex gap-2 justify-center">
+                                <h1>Email:</h1>
+                                <p>pizbaba0@gmail.com</p>
+                            </div>
+                            <div class="flex gap-2 justify-center">
+                                <h1>Address:</h1>
+                                <p class="capitalize">dhaka, bangladesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- statement -->
+                 <div class="mt-10 text-center border-b-2 lg:border-b-0 lg:border-r-2 w-[80%] mx-auto pb-5 lg:px-10">
+                    <a href="#" class="text-2xl lg:text-3xl font-bold uppercase font-headfontfamily tracking-wider">
+                        piz <span class="textLiner">baba</span>
+                    </a>
+                    <div class="text-xs mt-5">
+                        <p class="text-xs w-[80%] mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dignissimos praesentium itaque rem.</p>
+                        <div class="mt-5">
+                            <i class="fa-brands fa-facebook-f p-2"></i>
+                            <i class="fa-brands fa-instagram border-l-2 border-r-2 p-2"></i>
+                            <i class="fa-brands fa-x-twitter p-2"></i>
+                        </div>
+                    </div>
+                 </div>
+                <!-- opening -->
+                <div class="mt-10 text-center border-b-2 lg:border-b-0 w-[80%] mx-auto pb-5">
+                    <h1 class="text-2xl font-headlinefont capitalize">working hours</h1>
+                    <div class="mt-5 text-xs space-y-3">
+                        <p class="text-xs w-[80%] mx-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque magni fuga quo veniam nostrum laudantium?</p>
+                        <div class="flex gap-2 justify-center">
+                            <h1 class="capitalize">every-day --</h1>
+                            <p>10:00am to 11:00pm</p>
+                        </div>
+                        <div class="flex gap-2 justify-center">
+                            <h1>friday --</h1>
+                            <p>09:00am to 09:00pm</p>
+                        </div>
+                        <div class="flex gap-2 justify-center">
+                            <h1>sunday --</h1>
+                            <p class="capitalize">10:00am to 11:00pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- finished line -->
+            <p class="text-xs text-center py-5">@2024 All Rights Copyright pizbaba. Design By mehedi assad.</p>
+        </div>
+     </footer>
+
+
+    <!-- scroll up -->
+     <a href="#" class="fixed right-6 -bottom-[10%] bg-yellow-600 dark:bg-gray-300 px-5 py-4 rounded-full text-black z-50 hover:-translate-y-1 ease-in duration-200" id="scroll-up">
+        <i class="fa-solid fa-arrow-up"></i>
+     </a>
+
+
+    <!-- Swiper js for review -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+        });
+    </script>
+
+    <!-- sCROLLREVEL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
