@@ -182,23 +182,23 @@ window.addEventListener("scroll", activeLink);
 // Scroll revel animation
 const sr = ScrollReveal({
     origin: "top",
-    distance: "60px",
+    distance: "100px",
     duration: 2500,
-    delay: 400,
+    delay: 400
 })
 
 sr.reveal(".home_img");
 sr.reveal(".home_content", {origin: "bottom"});
 
-sr.reveal(".catagory_card");
+// sr.reveal(".catagory_card", {interval: 200});
 
-sr.reveal(".menu_drink1", {origin: "left"});
-sr.reveal(".menu_drink2", {origin: "right"});
-sr.reveal(".menu_drink3", {origin: "left"});
+// sr.reveal(".menu_drink1", {origin: "left"});
+// sr.reveal(".menu_drink2", {origin: "right"});
+// sr.reveal(".menu_drink3", {origin: "left"});
 
-sr.reveal(".popular_item1", {origin: "left"});
-sr.reveal(".popular_item2", {origin: "right"});
-sr.reveal(".popular_item3", {origin: "left"});
+// sr.reveal(".popular_item1", {origin: "left"});
+// sr.reveal(".popular_item2", {origin: "right"});
+// sr.reveal(".popular_item3", {origin: "left"});
 
-sr.reveal(".best_items", {origin: "left"});
+// sr.reveal(".best_items", {origin: "left"});
 
