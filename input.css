@@ -18,6 +18,11 @@
     --font-similarly: "Oswald", serif;
     --font-secondaryFont: "Lilita One", serif;
     --font-headfontfamily: "Anton", serif;
+
+}
+
+@theme{
+    --breakpoint-sm: [480px];
 }
 
 @theme {

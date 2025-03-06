@@ -166,7 +166,6 @@ const activeLink = () => {
         if(this.scrollY >= sectionTop - 60){
             current = section.getAttribute("id");
         }
-        console.log(sectionTop - 60, this.scrollY)
     })
     navLinks.forEach((item)=> {
         item.classList.remove("text-blue-600");
@@ -183,15 +182,15 @@ window.addEventListener("scroll", activeLink);
 // Scroll revel animation
 const sr = ScrollReveal({
     origin: "top",
-    distance: "100px",
+    distance: "60px",
     duration: 2500,
-    delay: 400
+    delay: 400,
 })
 
 sr.reveal(".home_img");
 sr.reveal(".home_content", {origin: "bottom"});
 
-sr.reveal(".catagory_card", {interval: 200});
+sr.reveal(".catagory_card");
 
 sr.reveal(".menu_drink1", {origin: "left"});
 sr.reveal(".menu_drink2", {origin: "right"});
