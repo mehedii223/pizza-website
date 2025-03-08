@@ -112,29 +112,37 @@ bestMenuItem.forEach((a)=> {
 
 
 
-// scroll up js
+// scroll up button js
+const header = document.getElementById("header");
 
 window.addEventListener("scroll", ()=> {
     const scrollEvent = document.getElementById("scroll-up");
 
     if(this.scrollY >= 600){
-        scrollEvent.classList.remove("-bottom-[10%]")
+        scrollEvent.classList.remove("-bottom-15")
         scrollEvent.classList.add("active")
     }else{
-        scrollEvent.classList.add("-bottom-[10%]")
+        scrollEvent.classList.add("-bottom-15")
         scrollEvent.classList.remove("active")
     }
 })
 
-window.addEventListener("scroll", ()=> {
-    const header = document.getElementById("header");
+let prevScroll = window.pageYOffset;
 
-    if(this.scrollY >= 50){
-        header.classList.add("border-b", "border-white")
+window.addEventListener("scroll", ()=> {
+    let CurrentScroll = window.pageYOffset;
+
+    if(prevScroll < CurrentScroll){
+        header.classList.remove("top-0")
+        header.classList.add("-top-22")
     }else{
-        header.classList.remove("border-b", "border-white")
+        header.classList.add("top-0")
+        header.classList.remove("-top-22")
     }
+    prevScroll = CurrentScroll
 })
+
+
 
 // darkmood on of
 const lightMoodOn = document.querySelector("#lightMoodOn");
@@ -190,15 +198,15 @@ const sr = ScrollReveal({
 sr.reveal(".home_img");
 sr.reveal(".home_content", {origin: "bottom"});
 
-// sr.reveal(".catagory_card", {interval: 200});
+sr.reveal(".catagory_card", {interval: 200});
 
-// sr.reveal(".menu_drink1", {origin: "left"});
-// sr.reveal(".menu_drink2", {origin: "right"});
-// sr.reveal(".menu_drink3", {origin: "left"});
+sr.reveal(".menu_drink1");
+sr.reveal(".menu_drink2");
+sr.reveal(".menu_drink3");
 
-// sr.reveal(".popular_item1", {origin: "left"});
-// sr.reveal(".popular_item2", {origin: "right"});
-// sr.reveal(".popular_item3", {origin: "left"});
+sr.reveal(".popular_item1");
+sr.reveal(".popular_item2");
+sr.reveal(".popular_item3");
 
-// sr.reveal(".best_items", {origin: "left"});
+sr.reveal(".best_items", {origin: "left"});
 

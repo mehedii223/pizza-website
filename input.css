@@ -45,24 +45,24 @@
 
 /* for menu slider */
 @theme{
-    --animate-slide1: slide1 1s forwards;
+    --animate-slide1: slide1 0.3s forwards;
 
     @keyframes slide1 {
         from{
             left: 50%;
         }
         to{
-            left: -1000%;
+            left: -100%;
         }
     }
 }
 
 @theme{
-    --animate-slide2: slide2 0.5s forwards;
+    --animate-slide2: slide2 0.3s forwards;
 
     @keyframes slide2 {
         from{
-            left: 1000%;
+            left: 100%;
         }
         to{
             left: 50%;
@@ -123,7 +123,7 @@
     }
 
     .container{
-        @apply mx-auto p-3
+        @apply mx-auto p-3 sm:p-0 sm:mx-0;
     }
     .headline{
         @apply text-6xl font-headlinefont
@@ -138,7 +138,7 @@
 
     /* for scroll up */
     .active{
-        @apply bottom-6
+        @apply bottom-[2%]
     }
 }
 
